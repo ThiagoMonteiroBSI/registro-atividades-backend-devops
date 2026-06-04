@@ -22,7 +22,7 @@ async def lifespan(app: FastAPI):
     yield
 
 
-app = FastAPI(title="Registro de Atividades API", lifespan=lifespan)
+app = FastAPI(title="Registro de Atividades API - Teste GitOps", version="2.0", lifespan=lifespan)
 
 app.add_middleware(
     CORSMiddleware,
